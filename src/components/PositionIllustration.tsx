@@ -3,6 +3,7 @@
  * Two-figure compositions: secondary figure in BODY color, primary/active in ACCENT.
  * All at viewBox="0 0 80 56".
  */
+import type { ReactElement } from 'react'
 
 const B = '#374151' // secondary figure (gray)
 const A = '#dc2626' // primary/active figure (red accent)
@@ -303,7 +304,7 @@ const CATEGORY_TO_KEY: Record<string, IllustrationKey> = {
   'Guard Restoration': 'guard',
 }
 
-const ILLUSTRATION_MAP: Record<IllustrationKey, () => JSX.Element> = {
+const ILLUSTRATION_MAP: Record<IllustrationKey, () => ReactElement> = {
   'guard': GuardSVG,
   'guard-passing': GuardPassingSVG,
   'mount': MountSVG,

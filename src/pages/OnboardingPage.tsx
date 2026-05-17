@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabaseClient'
 import { useAuth } from '../context/AuthContext'
-import { GYM_SYSTEM_LABELS } from '../types/app'
 import type { BeltLevel, GymSystem } from '../types/app'
 import { ChevronRight, ChevronLeft, Check } from 'lucide-react'
 
